@@ -7,8 +7,8 @@ sudo apt-get update -y
 sudo apt-get install git -y
 
 # DB HOST write to the .bashrc our envrionment variable
-echo 'export DB_HOST=192.168.10.200' >> ~/.bashrc
-export DB_HOST=192.168.10.200
+# echo 'export DB_HOST=127.0.0.1/posts' >> ~/.bashrc
+# export DB_HOST=127.0.0.1/posts
 
 # install nodejs
 sudo apt-get install python-software-properties -y
@@ -23,10 +23,10 @@ sudo apt-get install nginx -y
 
 # Removes the old file and replace with my modified version
 sudo rm /etc/nginx/sites-available/default
-sudo cp /home/ubuntu/environment/nginx.default /etc/nginx/sites-available/default
+sudo cp ~/environment/nginx.default /etc/nginx/sites-available/default
 
 sudo systemctl restart nginx.service
 
-cd /home/ubuntu/app
+cd ~/app
 
-sudo pm2 start app.js --update-env
+sudo DB_HOST=3.249.251.37 pm2 start app.js --update-env

@@ -10,7 +10,7 @@ sudo apt-get install -y mongodb-org=3.2.20 mongodb-org-server=3.2.20 mongodb-org
 
 # replace the original .conf file with the one that forces 0.0.0.0 port
 sudo rm /etc/mongod.conf
-sudo ln -s /home/ubuntu/environment/mongod.conf /etc/mongod.conf
+sudo ln -s ~/db/mongod.conf /etc/mongod.conf
 
 
 # Can also -> sudo cp -f mongod.conf /etc/mongod.conf <- which overwrites the mongod.conf file
