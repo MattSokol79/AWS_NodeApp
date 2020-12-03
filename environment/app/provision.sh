@@ -23,10 +23,10 @@ sudo apt-get install nginx -y
 
 # Removes the old file and replace with my modified version
 sudo rm /etc/nginx/sites-available/default
-sudo cp ~/environment/nginx.default /etc/nginx/sites-available/default
+sudo cp ~/environment/app/nginx.default /etc/nginx/sites-available/default
 
 sudo systemctl restart nginx.service
 
 cd ~/app
-
+sudo pm2 kill
 sudo DB_HOST=3.249.251.37 pm2 start app.js --update-env
