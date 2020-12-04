@@ -29,4 +29,4 @@ sudo systemctl restart nginx.service
 
 cd ~/app
 sudo pm2 kill
-sudo DB_HOST=3.249.251.37 pm2 start app.js --update-env
+sudo DB_HOST=18.202.177.163 pm2 start app.js --update-env
