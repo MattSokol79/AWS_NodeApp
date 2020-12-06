@@ -90,3 +90,5 @@ First of, we need to set up a CI pipeline where Jenkins connects to the github r
 ### Now the CD is setup so that it listens to the app_ci job and will only trigger if successfully built (i.e all tests pass and pushed to main). The commands essentially copy the app/ and environment/ folders into the AWS instance, enters the machine, and run the provision.sh file in order to start the app. Now app can be accessed by typing the public IP of the instance.
 
 ![](img/apprunning.PNG)
+
+## Sunday test before video
