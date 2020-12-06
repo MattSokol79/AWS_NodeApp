@@ -91,4 +91,10 @@ First of, we need to set up a CI pipeline where Jenkins connects to the github r
 
 ![](img/apprunning.PNG)
 
-## Sunday test before video
+## Testing
+
+
+
+
+
+
